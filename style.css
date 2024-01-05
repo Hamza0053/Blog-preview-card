@@ -1,0 +1,101 @@
+
+:root{
+    
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    
+    --fw-medium:600;
+    --fw-large:800;
+    }
+    
+    *,
+    *::after,
+    *::before{
+        box-sizing: border-box;
+    }
+    
+    body{
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color:#F3CD4F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        display: block;
+        max-width: 100%;
+    }
+    html{
+        font-size: 16px;
+        font-family: 'Figtree', sans-serif;
+    }
+
+    h1,h2{
+        margin: 0;
+        padding: 0;
+    }
+p{
+    margin: 0;
+}
+    .wrapper{
+        background-color: white;
+        width:400px;
+        padding: 1.4rem;
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.7rem;
+        border: .15rem solid rgba(0, 0, 0, 0.87);
+        box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.945);
+    }
+
+    @media screen and (max-width:450px) {
+        .wrapper{
+            width: 90%;
+        }
+    }
+    .wrapper>:nth-child(1){
+        border-radius: 1rem;
+    }
+    button{
+        background-color: #F3CD4F;
+        border: none;
+        padding: 0.5rem 1rem;
+        font-weight: var(--fw-medium);
+        border-radius: .3rem;
+
+    }
+
+    .button>p{
+       opacity: .75;
+margin-top: .75rem;
+    }
+
+    .foundation>h1{
+        color: #F3CD4F;
+        font-weight: var(--fw-large);
+        font-size: 1.5rem;
+    }
+  
+    .foundation>p{
+        opacity: .55;
+    margin-top: 1rem;
+    }
+
+    .man{
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .man>img{
+        max-width: 2rem;
+        max-height: 2rem;
+    }
+    .man>h2{
+        font-size: 1rem;
+        opacity: .9;
+    }
